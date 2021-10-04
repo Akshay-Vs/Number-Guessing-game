@@ -60,3 +60,4 @@ for I in range(remaining_attempts):
 print("\nGame over")
 if remaining_attempts==0:
 	print("You loose the game\n")
+	

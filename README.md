@@ -4,16 +4,16 @@
 
   <p>
     <h3> features </h2>
-    &bull; Levels
-    &bull; Computer Multiplayer
-    &bull; point system
+    &bull; Levels <br>
+    &bull; Computer Multiplayer <br>
+    &bull; point system <br>
  </p>
  
  <p>
    <h3> How to play?</h3> 
-   &bull; Enter a number as level, Number of chances available and max range depent on this
-   &bull; Select Mode: single player or Multiplayer
-   &bull; Enter your guess
-   &bull; Guess the actual number based on given hints
+   &bull; Enter a number as level, Number of chances available and max range depent on this <br>
+   &bull; Select Mode: single player or Multiplayer <br>
+   &bull; Enter your guess <br>
+   &bull; Guess the actual number based on given hints <br>
   </p>
  

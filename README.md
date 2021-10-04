@@ -1,6 +1,6 @@
 <h1 align="center">Number Guessing Game<br>Test your Guesses
  </h1>
-<h3 align="center">This is a one day build; Terminal based number guessing game</h3>
+<h3 align="center">This is a one hour build; Terminal based number guessing game</h3>
 
   <p>
     <h3> features </h2>

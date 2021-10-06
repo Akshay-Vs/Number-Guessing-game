@@ -23,6 +23,12 @@
  <h2 align='left'><u><b>Version</u></b></h2>
  Version 1.0
  
+ <h2><u><b>Installation</u></b></h2>
+ 
+ Install using git bash<code> $git clone https://github.com/Akshay-Vs/Number-Guessing-game.git </code><br>
+ os click download button 👇 <br>
+ <a href="https://github.com/Akshay-Vs/Number-Guessing-game/archive/refs/heads/main.zip" target="blank"><img align="center" src="https://github.com/Akshay-Vs/resources/blob/main/src/download_bt.png" alt="blank" height="78" width="200" /></a>
+ 
 <h2 align="left"><b>Connect with me</b></h4>
 <p align="left">
 <a href="https://twitter.com/@Akshayv69128812" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="@Akshayv69128812" height="30" width="40" /></a>

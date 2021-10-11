@@ -2,15 +2,12 @@
 import random
 
 	
-pointwrite=open('point.txt','w')
-root=open('point.txt','r')
-point=root.read()
 
 try:
 	max_value =int(input('Enter your level : '))
 	bots=str(input('Enter game mode \neg: single, multiplayer\n\t\t: '))
 except Exception:
-		print('\n\tInvalid input\n\tGame over\n\n')
+	print('\n\tInvalid input\n\tGame over\n\n')
 if max_value==0:
 		print("\n\tLevel zero is not available\n\t\tGame over\n\nError : ")
 		

@@ -1,13 +1,7 @@
-#Number Guessing game
 import random
 
-	
+max_value =int(input('Enter your level : '))
 
-try:
-	max_value =int(input('Enter your level : '))
-	bots=str(input('Enter game mode \neg: single, multiplayer\n\t\t: '))
-except Exception:
-	print('\n\tInvalid input\n\tGame over\n\n')
 if max_value==0:
 		print("\n\tLevel zero is not available\n\t\tGame over\n\nError : ")
 		
@@ -57,4 +51,3 @@ for I in range(remaining_attempts):
 print("\nGame over")
 if remaining_attempts==0:
 	print("You loose the game\n")
-	

@@ -5,7 +5,6 @@ max_value =int(input('Enter your level : '))
 if max_value==0:
 		print("\n\tLevel zero is not available\n\t\tGame over\n\nError : ")
 		
-
 remaining_attempts=float(1)
 remaining_attempts=75%max_value
 

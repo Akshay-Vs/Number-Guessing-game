@@ -1,52 +1,65 @@
 import random
 
-max_value =int(input('Enter your level : '))
+# Get user input for the maximum level
+max_value = int(input('Enter your level: '))
 
-if max_value==0:
-		print("\n\tLevel zero is not available\n\t\tGame over\n\nError : ")
-		
-remaining_attempts=float(1)
-remaining_attempts=75%max_value
+# Check if the entered level is zero
+if max_value == 0:
+    print("\n\tLevel zero is not available\n\t\tGame over\n\nError : ")
 
-player_state=bool(False)
-bot_state=bool(False)
+# Initialize remaining attempts and calculate based on the level
+remaining_attempts = 75 % max_value
 
-if max_value<=10:
-	level="Easy"
-elif max_value>10 and max_value<=40:
-	level="Hard"
+# Initialize player and bot states
+player_state = False
+bot_state = False
+
+# Determine the level based on the maximum value
+if max_value <= 10:
+    level = "Easy"
+elif 10 < max_value <= 40:
+    level = "Hard"
 else:
-	level="Impossible"
-	remaining_attempts=remaining_attempts -15% remaining_attempts
+    level = "Impossible"
+    remaining_attempts = remaining_attempts - 15 % remaining_attempts
 
-print('Level applied : ',level,"\nYou got ", remaining_attempts," attempts")
+# Display the chosen level and the number of attempts
+print('Level applied: ', level, "\nYou got", remaining_attempts, "attempts")
 
-number= random.randint(1, max_value)
-bot_input=random.randint(1,max_value)
+# Generate a random number for the player to guess
+number = random.randint(1, max_value)
+bot_input = random.randint(1, max_value)
 
-for I in range(remaining_attempts):
-	remaining_attempts=remaining_attempts-1
-	try:
-			
-		guess = int(input('\nEnter your guess '))
-		if bot_input==number:
-			bot_state=True
-		if guess > number:
-			print('Too high')
-		if guess < number:
-			print('Too low')
-		if guess==number:
-			player_state=True
-			bonus=float(remaining_attempts+10)
-			remaining_attempts=remaining_attempts+bonus			
-			print("\n Congratulations,You got ",bonus," bonus points")			
-			break
-			
-	except ValueError:
-		print("\nInvalid Input\n")
+# Allow the player to make guesses for the remaining attempts
+for i in range(remaining_attempts):
+    remaining_attempts = remaining_attempts - 1
+    try:
+        # Get user input for the guess
+        guess = int(input('\nEnter your guess: '))
 
-	
-		remaining_attempts=remaining_attempts+1
+        # Check if the bot's guess matches the number
+        if bot_input == number:
+            bot_state = True
+
+        # Provide feedback based on the user's guess
+        if guess > number:
+            print('Too high')
+        elif guess < number:
+            print('Too low')
+        elif guess == number:
+            player_state = True
+            bonus = float(remaining_attempts + 10)
+            remaining_attempts = remaining_attempts + bonus
+            print("\nCongratulations, you got", bonus, "bonus points")
+            break
+
+    except ValueError:
+        print("\nInvalid Input\n")
+        remaining_attempts = remaining_attempts + 1
+
+# Display game over message
 print("\nGame over")
-if remaining_attempts==0:
-	print("You loose the game\n")
+
+# Check if the player lost the game
+if remaining_attempts == 0:
+    print("You lose the game\n")
